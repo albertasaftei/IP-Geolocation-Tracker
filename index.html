@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IP Geolocation API</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A==" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA==" crossorigin=""></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="info-container">
+            <div class="info-input">
+                <h3>IP Address Tracker</h3>
+                <div class="input-container">
+                    <input id="ip-input" type="text" placeholder="Search for any IP address">
+                    <button id="locateBtn">Track</button>
+                </div>
+            </div>
+
+            <div class="info-output">
+                <div class="box">
+                    <span>IP Address</span>
+                    <span class="output" id="ip"></span>
+                </div>
+                <div class="box">
+                    <span>Location</span>
+                    <span class="output" id="location"></span>
+                </div>
+                <div class="box">
+                    <span>Timezone</span>
+                    <span class="output" id="timezone"></span>
+                </div>
+                <div class="box">
+                    <span>ISP</span>
+                    <span class="output" id="isp"></span>
+                </div>
+
+            </div>
+        </div>
+        <div class="map" id="map"></div>
+    </div>
+</body>
+
+<script src="script.js"></script>
+
+
+</html>
